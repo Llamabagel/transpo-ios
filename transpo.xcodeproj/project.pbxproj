@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		BD9C6203227A636D006B3843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C6202227A636D006B3843 /* AppDelegate.swift */; };
 		BD9C6205227A636D006B3843 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C6204227A636D006B3843 /* ViewController.swift */; };
-		BD9C6208227A636D006B3843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9C6206227A636D006B3843 /* Main.storyboard */; };
 		BD9C620B227A636D006B3843 /* transpo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD9C6209227A636D006B3843 /* transpo.xcdatamodeld */; };
 		BD9C620D227A6373006B3843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9C620C227A6373006B3843 /* Assets.xcassets */; };
 		BD9C6210227A6373006B3843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9C620E227A6373006B3843 /* LaunchScreen.storyboard */; };
 		BD9C621B227A6373006B3843 /* transpoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C621A227A6373006B3843 /* transpoTests.swift */; };
 		BD9C6226227A6373006B3843 /* transpoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C6225227A6373006B3843 /* transpoUITests.swift */; };
+		C923E09EE85C26DCB688FBD0 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C923E3FE574D8499E2F2D685 /* TripsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		BD9C61FF227A636D006B3843 /* transpo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = transpo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9C6202227A636D006B3843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD9C6204227A636D006B3843 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BD9C6207227A636D006B3843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD9C620A227A636D006B3843 /* transpo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = transpo.xcdatamodel; sourceTree = "<group>"; };
 		BD9C620C227A6373006B3843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD9C620F227A6373006B3843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		BD9C6221227A6373006B3843 /* transpoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = transpoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9C6225227A6373006B3843 /* transpoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transpoUITests.swift; sourceTree = "<group>"; };
 		BD9C6227227A6373006B3843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C923E3FE574D8499E2F2D685 /* TripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,11 @@
 			children = (
 				BD9C6202227A636D006B3843 /* AppDelegate.swift */,
 				BD9C6204227A636D006B3843 /* ViewController.swift */,
-				BD9C6206227A636D006B3843 /* Main.storyboard */,
 				BD9C620C227A6373006B3843 /* Assets.xcassets */,
 				BD9C620E227A6373006B3843 /* LaunchScreen.storyboard */,
 				BD9C6211227A6373006B3843 /* Info.plist */,
 				BD9C6209227A636D006B3843 /* transpo.xcdatamodeld */,
+				C923E3FE574D8499E2F2D685 /* TripsViewController.swift */,
 			);
 			path = transpo;
 			sourceTree = "<group>";
@@ -234,7 +234,6 @@
 			files = (
 				BD9C6210227A6373006B3843 /* LaunchScreen.storyboard in Resources */,
 				BD9C620D227A6373006B3843 /* Assets.xcassets in Resources */,
-				BD9C6208227A636D006B3843 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +261,7 @@
 				BD9C6205227A636D006B3843 /* ViewController.swift in Sources */,
 				BD9C6203227A636D006B3843 /* AppDelegate.swift in Sources */,
 				BD9C620B227A636D006B3843 /* transpo.xcdatamodeld in Sources */,
+				C923E09EE85C26DCB688FBD0 /* TripsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BD9C6206227A636D006B3843 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD9C6207227A636D006B3843 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD9C620E227A6373006B3843 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
