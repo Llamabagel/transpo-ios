@@ -5,10 +5,28 @@
 
 import UIKit
 
-class TripsViewController : UIViewController {
+class TripsViewController: UIViewController {
+
+    var stopId: String?
+
+    let textLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        view.backgroundColor = .white
+
+        view.addSubview(textLabel)
+
+        //textLabel.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        textLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        textLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        textLabel.text = stopId
     }
 
 }

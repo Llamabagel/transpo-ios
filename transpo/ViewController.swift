@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     private let textLabel: UILabel = {
         let label = UILabel()
-        label.text = "Hello World"
+        label.text = "Hello World!"
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -29,13 +29,12 @@ class ViewController: UIViewController {
     
     private let launchButton: UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = .blue
-        button.setTitle("Login", for: .normal)
-        button.tintColor = .white
+        button.setTitle("Button", for: .normal)
         button.layer.cornerRadius = 5
         button.clipsToBounds = true
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.translatesAutoresizingMaskIntoConstraints = false
+
+        button.addTarget(self, action: #selector(handleAction), for: .touchUpInside)
         
         return button
     }()
@@ -65,6 +64,11 @@ class ViewController: UIViewController {
         launchButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         launchButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
     }
-    
+
+    @objc func handleAction(_ sender: UIButton) {
+        let newController = TripsViewController()
+        newController.stopId = "AA100"
+        navigationController?.pushViewController(newController, animated: true)
+    }
 }
 
